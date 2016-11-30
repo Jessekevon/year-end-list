@@ -1,4 +1,4 @@
-@import 'bourbon'; // http://bourbon.io/
+@import "../bourbon/bourbon";
 @import '../partials/variables'; // colors, fonts etc...
 @import '../partials/mixins'; // custom mixins
 @import '../partials/layout'; // responsive grid and media queries
@@ -20,12 +20,13 @@ html {
 }
 
 body {
-	float: left;
-	width: 100%;
+  float: left;
+  width: 100%;
   font: {
-    size: 1.6rem;
-    family: $primary-font; // variables inside partials > _variables.scss
+  size: 1.6rem;
+  family: $primary-font; // variables inside partials > _variables.scss
   }
+
   color: $color-6;
   background-color: shade($color-1, 20%);
   @include font-smoothing;
@@ -66,7 +67,6 @@ iframe {
   position: absolute;
 }
 
-
 /* -------------------------------- 
 
 Main Components 
@@ -81,17 +81,17 @@ body[data-hijacking="on"] {
 
 .cd-section {
   height: 100vh;
+
   h2 {
-    // line-height: 100vh;
     text-align: center;
     font-size: 2.4rem;
   }
+
   &:first-of-type > div {
-    background: /* top, transparent red, faked with gradient */
-    linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* bottom, image */
-    url(https://i.ytimg.com/vi/iezyTjg-8iY/maxresdefault.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(http://cdn2.thelineofbestfit.com/images/remote/https_cdn2.thelineofbestfit.com/media/2014/Holy_Esque_-_At_Hopes_Ravine.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
     &::before {
       position: absolute;
       width: 100%;
@@ -104,200 +104,112 @@ body[data-hijacking="on"] {
       color: tint($color-1, 30%);
     }
   }
+
   &:nth-of-type(2) > div {
-    background: /* top, transparent red, faked with gradient */
-    linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* bottom, image */
-    url(http://i.onionstatic.com/avclub/5652/19/16x9/960.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(http://cdn2.thelineofbestfit.com/images/remote/https_cdn2.thelineofbestfit.com/media/2014/Holy_Esque_-_At_Hopes_Ravine.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
   }
+
   &:nth-of-type(3) > div {
-    background: /* top, transparent red, faked with gradient */
-    linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* bottom, image */
-    url(http://ecx.images-amazon.com/images/I/713WaG%2BJUDL._SL1500_.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(http://cdn2.thelineofbestfit.com/images/remote/https_cdn2.thelineofbestfit.com/media/2014/Holy_Esque_-_At_Hopes_Ravine.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
   }
+
   &:nth-of-type(4) > div {
-    background: /* top, transparent red, faked with gradient */
-    linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* bottom, image */
-    url(https://craigreviewsmusic.files.wordpress.com/2015/06/mewithoutyou-pale-horses.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(http://cdn2.thelineofbestfit.com/images/remote/https_cdn2.thelineofbestfit.com/media/2014/Holy_Esque_-_At_Hopes_Ravine.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
   }
+
   &:nth-of-type(5) > div {
-    background: /* top, transparent red, faked with gradient */
-    linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* bottom, image */
-    url(http://cdn2.thelineofbestfit.com/media/2014/health_death_magic_artwork.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(http://cdn2.thelineofbestfit.com/images/remote/https_cdn2.thelineofbestfit.com/media/2014/Holy_Esque_-_At_Hopes_Ravine.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
   }
+
   &:nth-of-type(6) > div {
-    background: /* top, transparent red, faked with gradient */
-    linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* bottom, image */
-    url(http://2.bp.blogspot.com/-MFT0QgEaj4A/VYkO7EntytI/AAAAAAAAFNc/EwUhtvpV5pU/s1600/DE1068.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(http://cdn2.thelineofbestfit.com/images/remote/https_cdn2.thelineofbestfit.com/media/2014/Holy_Esque_-_At_Hopes_Ravine.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
   }
+
   &:nth-of-type(7) > div {
-    background: /* top, transparent red, faked with gradient */
-    linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* bottom, image */
-    url(https://subpop-img.s3.amazonaws.com/asset/productable_images/attachments/000/005/308/max_960/metz-ii-900-300dpi.jpg?1421957084);
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(http://cdn2.thelineofbestfit.com/images/remote/https_cdn2.thelineofbestfit.com/media/2014/Holy_Esque_-_At_Hopes_Ravine.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
   }
+
   &:nth-of-type(8) > div {
-    background: /* top, transparent red, faked with gradient */
-    linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* bottom, image */
-    url(http://static.stereogum.com/uploads/2015/09/14115849/panopticon.jpg
-);
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(http://cdn2.thelineofbestfit.com/images/remote/https_cdn2.thelineofbestfit.com/media/2014/Holy_Esque_-_At_Hopes_Ravine.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
   }
+
   &:nth-of-type(9) > div {
-    background: /* top, transparent red, faked with gradient */
-    linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* bottom, image */
-    url(https://consequenceofsound.files.wordpress.com/2015/04/tame-impala-currents.jpg
-);
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(http://cdn2.thelineofbestfit.com/images/remote/https_cdn2.thelineofbestfit.com/media/2014/Holy_Esque_-_At_Hopes_Ravine.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
   }
+
   &:nth-of-type(10) > div {
-    background: /* top, transparent red, faked with gradient */
-    linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* bottom, image */
-    url(https://f1.bcbits.com/img/a0355868691_10.jpg
-);
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(http://cdn2.thelineofbestfit.com/images/remote/https_cdn2.thelineofbestfit.com/media/2014/Holy_Esque_-_At_Hopes_Ravine.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
   }
-    &:nth-of-type(11) > div {
-      background: /* top, transparent red, faked with gradient */
-      linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* bottom, image */
-      url(https://consequenceofsound.files.wordpress.com/2015/07/teen-daze-morning-world.jpg?w=1200
-  );
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+
+  &:nth-of-type(11) > div {
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(http://cdn2.thelineofbestfit.com/images/remote/https_cdn2.thelineofbestfit.com/media/2014/Holy_Esque_-_At_Hopes_Ravine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
 
   &:nth-of-type(12) > div {
-    background: /* top, transparent red, faked with gradient */
-    linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* bottom, image */
-    url(https://consequenceofsound.files.wordpress.com/2015/02/waxahatchee.png
-);
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(https://f4.bcbits.com/img/a3153393733_10.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-    &:nth-of-type(13) > div {
-      background: /* top, transparent red, faked with gradient */
-      linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* bottom, image */
-      url(https://f1.bcbits.com/img/a2171663296_10.jpg
-  );
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-      &:nth-of-type(14) > div {
-        background: /* top, transparent red, faked with gradient */
-        linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* bottom, image */
-        url(https://consequenceofsound.files.wordpress.com/2015/06/vattnet-viskar-settler.jpg
-    );
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-        &:nth-of-type(15) > div {
-          background: /* top, transparent red, faked with gradient */
-          linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* bottom, image */
-          url(http://www.tunescope.com/wp-content/uploads/2015/09/Cult-Leader-Lightless-Walk-Cover.jpg
-      );
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
-
-          &:nth-of-type(16) > div {
-            background: /* top, transparent red, faked with gradient */
-            linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* bottom, image */
-            url(https://f1.bcbits.com/img/a2813479087_10.jpg
-        );
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
-
-            &:nth-of-type(17) > div {
-              background: /* top, transparent red, faked with gradient */
-              linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* bottom, image */
-              url(https://f1.bcbits.com/img/0005849702_10.jpg
-
-          );
-              background-repeat: no-repeat;
-              background-size: cover;
-            }
-
-              &:nth-of-type(18) > div {
-                background: /* top, transparent red, faked with gradient */
-                linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* bottom, image */
-                url(http://www.nerdglow.com/wp-content/uploads/2015/01/Twerps-Range-Anxiety.jpg
-
-            );
-                background-repeat: no-repeat;
-                background-size: cover;
-              }
-                &:nth-of-type(19) > div {
-                  background: /* top, transparent red, faked with gradient */
-                  linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* bottom, image */
-                  url(https://f1.bcbits.com/img/0004053794_10.jpg
-
-              );
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                }
-                  &:nth-of-type(20) > div {
-                    background: /* top, transparent red, faked with gradient */
-                    linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* bottom, image */
-                    url(https://f1.bcbits.com/img/a3957713360_10.jpg
-
-                );
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                  }
-
-
-
-
-
-  [data-animation="parallax"] & > div,
-  [data-animation="fixed"] & > div,
-  [data-animation="opacity"] & > div {
     background-position: center center;
+  }
+
+  &:nth-of-type(13) > div {
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
   }
-  [data-animation="parallax"] &:first-of-type > div,
-  [data-animation="fixed"] &:first-of-type > div,
-  [data-animation="opacity"] &:first-of-type > div {
-    background-image: url('../img/img-1.jpg');
+
+  &:nth-of-type(14) > div {
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(http://cdn2.thelineofbestfit.com/images/remote/https_cdn2.thelineofbestfit.com/media/2014/Holy_Esque_-_At_Hopes_Ravine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
   }
-  [data-animation="parallax"] &:nth-of-type(2) > div,
-  [data-animation="fixed"] &:nth-of-type(2) > div,
-  [data-animation="opacity"] &:nth-of-type(2) > div {
-    background-image: url('../img/img-2.jpg');
+
+  &:nth-of-type(15) > div {
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(http://cdn2.thelineofbestfit.com/images/remote/https_cdn2.thelineofbestfit.com/media/2014/Holy_Esque_-_At_Hopes_Ravine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
   }
-  [data-animation="parallax"] &:nth-of-type(3) > div,
-  [data-animation="fixed"] &:nth-of-type(3) > div,
-  [data-animation="opacity"] &:nth-of-type(3) > div {
-    background-image: url('../img/img-3.jpg');
+
+  &:nth-of-type(15) > div {
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(http://cdn2.thelineofbestfit.com/images/remote/https_cdn2.thelineofbestfit.com/media/2014/Holy_Esque_-_At_Hopes_Ravine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
   }
-  [data-animation="parallax"] &:nth-of-type(4) > div,
-  [data-animation="fixed"] &:nth-of-type(4) > div,
-  [data-animation="opacity"] &:nth-of-type(4) > div {
-    background-image: url('../img/img-4.jpg');
-  }
-  [data-animation="parallax"] &:nth-of-type(5) > div,
-  [data-animation="fixed"] &:nth-of-type(5) > div,
-  [data-animation="opacity"] &:nth-of-type(5) > div {
-    background-image: url('../img/img-5.jpg');
-  }
+
+
   @include MQ(L) {
     h2 {
       font-size: 6.0rem;
@@ -365,32 +277,33 @@ body[data-hijacking="on"] {
 }
 
 .cd-vertical-nav {
-  /* lateral navigation */
   position: fixed;
   z-index: 1;
   right: 3%;
   @include center(y);
   display: none;
+
   a {
     display: block;
     height: 40px;
     width: 40px;
-    /* image replace */
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
     background: url(../img/cd-icon-arrow.svg) no-repeat center center;
+
     &.cd-prev {
       @include transform(rotate(180deg));
       margin-bottom: 10px;
     }
+
     &.inactive {
       visibility: hidden;
       opacity: 0;
-      @include transition(opacity 0.2s 0s,
-      visibility 0s 0.2s);
+      @include transition(opacity 0.2s 0s, visibility 0s 0.2s);
     }
   }
+
   @include MQ(L) {
     display: block;
   }
@@ -401,28 +314,26 @@ section {
 }
 
 // List View
+
 .list {
   float: left;
   width: 100%;
   background-color: #938ccf;
-  // .inner {
-  //   @include vertical-align;
-  // }
-  h2 {
-  	font-size: 3.5rem;
-  	transform: none;
-  	transform: none;
-  	top: inherit;
-  	margin: 40px auto;
 
+  h2 {
+    font-size: 3.5rem;
+    transform: none;
+    transform: none;
+    top: inherit;
+    margin: 40px auto;
   }
   p {
-  	margin-bottom: 15px;
+    margin-bottom: 15px;
   }
 }
 
 @media (max-width: 1025px) {
-	iframe {
-		display: none;
-	}
+  iframe {
+    display: none;
+  }
 }
