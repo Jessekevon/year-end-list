@@ -1,0 +1,29 @@
+{
+  "name": "boilerplate.it.is",
+  "version": "1.0.0",
+  "authors": [
+    "Junie Threatt <junie@what.it.is>"
+  ],
+  "description": "Boilerplate for what.it.is sites",
+  "keywords": [
+    "boilerplate",
+    "what.it.is"
+  ],
+  "license": "MIT",
+  "homepage": "http://what.it.is",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.4",
+    "fontawesome": "~4.3.0",
+    "jquery.ui": "~1.11.4",
+    "animate.sass": "*",
+    "compass": "~0.5.4",
+    "susy": "~2.2.5"
+  }
+}
