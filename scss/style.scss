@@ -190,26 +190,60 @@ body[data-hijacking="on"] {
   }
 
   &:nth-of-type(14) > div {
-    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(http://cdn3.pitchfork.com/albums/23843/985e010a.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(https://f4.bcbits.com/img/a1700277160_10.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
   }
 
   &:nth-of-type(15) > div {
-    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(http://cdn2.thelineofbestfit.com/images/remote/https_cdn2.thelineofbestfit.com/media/2014/Holy_Esque_-_At_Hopes_Ravine.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(https://f4.bcbits.com/img/a0220069364_10.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
   }
 
-  &:nth-of-type(15) > div {
-    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(http://cdn2.thelineofbestfit.com/images/remote/https_cdn2.thelineofbestfit.com/media/2014/Holy_Esque_-_At_Hopes_Ravine.jpg);
+  &:nth-of-type(16) > div {
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(https://f4.bcbits.com/img/a0095785674_10.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
   }
 
+  &:nth-of-type(17) > div {
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(https://pbs.twimg.com/media/CwGQooNWcAAwtg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &:nth-of-type(18) > div {
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(https://f4.bcbits.com/img/a1899974313_10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &:nth-of-type(19) > div {
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(https://f4.bcbits.com/img/a0852303980_10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &:nth-of-type(20) > div {
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(https://f4.bcbits.com/img/a4043831127_10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &:nth-of-type(21) > div {
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55)), url(http://www.sheridanbrand.com/wp-content/uploads/2015/12/eddie-1024x576.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
 
   @include MQ(L) {
     h2 {
